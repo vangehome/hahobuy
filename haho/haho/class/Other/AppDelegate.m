@@ -18,8 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window=[[UIWindow alloc]init];
-    self.window.frame=[[UIScreen mainScreen]bounds];
+    self.window=[[UIWindow alloc] init];//创建窗口
+    self.window.frame=[[UIScreen mainScreen] bounds];//窗口大小
     HHTabBarViewController* tabbarcontroller=[[HHTabBarViewController alloc]init];
     
     self.window.rootViewController=tabbarcontroller;

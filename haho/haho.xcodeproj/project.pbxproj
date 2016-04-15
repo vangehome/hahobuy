@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A11AF2D51CBD2D80002EED3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11AF2D41CBD2D80002EED3E /* Assets.xcassets */; };
 		A11AF2FB1CBD2F3D002EED3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F21CBD2F3D002EED3E /* AppDelegate.m */; };
 		A11AF2FC1CBD2F3D002EED3E /* haho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F31CBD2F3D002EED3E /* haho.xcdatamodeld */; };
 		A11AF2FE1CBD2F3D002EED3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F61CBD2F3D002EED3E /* main.m */; };
 		A11AF3041CBD2F9D002EED3E /* HHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF3031CBD2F9D002EED3E /* HHNavigationBar.m */; };
 		A11AF3071CBD3500002EED3E /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF3061CBD3500002EED3E /* HHTabBarViewController.m */; };
+		A11DFC361CBFF92700802FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11AF2D41CBD2D80002EED3E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -316,7 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11AF2D51CBD2D80002EED3E /* Assets.xcassets in Resources */,
+				A11DFC361CBFF92700802FF3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/haho/class/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vangehome.haho;
@@ -436,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/haho/class/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vangehome.haho;
@@ -463,6 +463,7 @@
 				A11AF2DE1CBD2D80002EED3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

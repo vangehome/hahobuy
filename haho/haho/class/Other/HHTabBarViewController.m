@@ -17,11 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
     UIViewController* v=[[UIViewController alloc]init];
-    
-    
+    [self AddTab:@"首页" vc:v];
+    UIViewController* v2=[[UIViewController alloc]init];
+    [self AddTab:@"分类" vc:v2];
 
 }
 
@@ -29,8 +28,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)AddTab{
+-(void)AddTab:(NSString*)Title vc:(UIViewController*) VC {
     
+    VC.tabBarItem.title=Title;
+    [self addChildViewController:VC];
 }
 /*
 #pragma mark - Navigation
