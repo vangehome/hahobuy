@@ -31,7 +31,7 @@
     
     NSMutableDictionary* selectdic=[NSMutableDictionary dictionary];
     selectdic[NSFontAttributeName]=[UIFont systemFontOfSize:12];
-    selectdic[NSForegroundColorAttributeName]=[UIColor whiteColor];
+    selectdic[NSForegroundColorAttributeName]=XMGRGBCOLOR(146, 146, 146);
     
     UITabBarItem* item=[UITabBarItem appearance];//appearance 全局从设置tabbar属性,不需要再一个个更改
     
