@@ -7,7 +7,13 @@
 //
 
 #import "HHTabBarViewController.h"
-
+#import "HHNavigationController.h"
+#import "HHTabBar.h"
+#import "HHDiscoverViewController.h"
+#import "HHIndexViewController.h"
+#import "HHMeViewController.h"
+#import "HHShopcarViewController.h"
+#import "HHCategoryViewController.h"
 @interface HHTabBarViewController ()
 
 @end
@@ -16,22 +22,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    UIViewController* v=[[UIViewController alloc]init];
-    [self AddTab:@"首页" vc:v];
-    UIViewController* v2=[[UIViewController alloc]init];
-    [self AddTab:@"分类" vc:v2];
+    //============================设置tab属性=================================
+    
+    NSMutableDictionary* dic=[NSMutableDictionary dictionary];
+    dic[NSFontAttributeName]=[UIFont systemFontOfSize:12];
+    dic[NSForegroundColorAttributeName]=[UIColor whiteColor];
+    
+    
+    NSMutableDictionary* selectdic=[NSMutableDictionary dictionary];
+    selectdic[NSFontAttributeName]=[UIFont systemFontOfSize:12];
+    selectdic[NSForegroundColorAttributeName]=[UIColor whiteColor];
+    
+    UITabBarItem* item=[UITabBarItem appearance];//appearance 全局从设置tabbar属性,不需要再一个个更改
+    
+    [item setTitleTextAttributes:dic forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectdic forState:UIControlStateSelected];
+    [self setValue:[[HHTabBar alloc] init] forKeyPath:@"tabBar"];
+    
+    //属性设置结束
 
+    //添加tabitem
+    [self addtab:[[HHIndexViewController alloc] init] title:@"" image:@"" selectImg:@""];
+    [self addtab:[[HHCategoryViewController alloc] init] title:@"分类" image:@"" selectImg:@""];
+    [self addtab:[[HHShopcarViewController alloc] init] title:@"发现" image:@"" selectImg:@""];
+    [self addtab:[[HHDiscoverViewController alloc] init] title:@"购物车" image:@"" selectImg:@""];
+    [self addtab:[[HHMeViewController alloc] init] title:@"我" image:@"" selectImg:@""];
+    //tabitem end
+    
+     
 }
 
+
+//添加子控制器
+-(void)addtab:(UIViewController*)vc title:(NSString*) title image:(NSString*)image selectImg:(NSString*)selectImg{
+    
+    vc.tabBarItem.title=title;
+    vc.navigationItem.title=title;
+    vc.tabBarItem.image=[UIImage imageNamed:image];
+    
+    vc.tabBarItem.selectedImage=[UIImage imageNamed:selectImg];
+    //一旦调用view 就创建了控制器
+    //vc.view.backgroundColor=[UIColor colorWithRed:(223)/255.0  green:(223)/255.0 blue:(223)/255.0 alpha:1];
+    //XMGLogFun;
+    
+    HHNavigationController* nav=[[HHNavigationController alloc] initWithRootViewController:vc];
+    
+    [self addChildViewController:nav];
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
--(void)AddTab:(NSString*)Title vc:(UIViewController*) VC {
-    
-    VC.tabBarItem.title=Title;
-    [self addChildViewController:VC];
 }
 /*
 #pragma mark - Navigation

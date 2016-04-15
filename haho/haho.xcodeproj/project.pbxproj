@@ -10,9 +10,16 @@
 		A11AF2FB1CBD2F3D002EED3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F21CBD2F3D002EED3E /* AppDelegate.m */; };
 		A11AF2FC1CBD2F3D002EED3E /* haho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F31CBD2F3D002EED3E /* haho.xcdatamodeld */; };
 		A11AF2FE1CBD2F3D002EED3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF2F61CBD2F3D002EED3E /* main.m */; };
-		A11AF3041CBD2F9D002EED3E /* HHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF3031CBD2F9D002EED3E /* HHNavigationBar.m */; };
 		A11AF3071CBD3500002EED3E /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AF3061CBD3500002EED3E /* HHTabBarViewController.m */; };
 		A11DFC361CBFF92700802FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11AF2D41CBD2D80002EED3E /* Assets.xcassets */; };
+		A13719571CC13A680019BCC7 /* HHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719561CC13A680019BCC7 /* HHNavigationController.m */; };
+		A137195A1CC13A930019BCC7 /* HHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719591CC13A930019BCC7 /* HHTabBar.m */; };
+		A137195C1CC13BA90019BCC7 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A137195B1CC13BA90019BCC7 /* Foundation+Log.m */; };
+		A13719601CC13D960019BCC7 /* HHCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A137195F1CC13D960019BCC7 /* HHCategoryViewController.m */; };
+		A13719631CC13DAB0019BCC7 /* HHDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719621CC13DAB0019BCC7 /* HHDiscoverViewController.m */; };
+		A13719661CC13DB90019BCC7 /* HHIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719651CC13DB90019BCC7 /* HHIndexViewController.m */; };
+		A13719691CC13DC50019BCC7 /* HHMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719681CC13DC50019BCC7 /* HHMeViewController.m */; };
+		A137196C1CC13DDC0019BCC7 /* HHShopcarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A137196B1CC13DDC0019BCC7 /* HHShopcarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +30,24 @@
 		A11AF2F41CBD2F3D002EED3E /* haho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = haho.xcdatamodel; sourceTree = "<group>"; };
 		A11AF2F51CBD2F3D002EED3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11AF2F61CBD2F3D002EED3E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A11AF3021CBD2F9D002EED3E /* HHNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNavigationBar.h; sourceTree = "<group>"; };
-		A11AF3031CBD2F9D002EED3E /* HHNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNavigationBar.m; sourceTree = "<group>"; };
 		A11AF3051CBD3500002EED3E /* HHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTabBarViewController.h; sourceTree = "<group>"; };
 		A11AF3061CBD3500002EED3E /* HHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTabBarViewController.m; sourceTree = "<group>"; };
+		A13719551CC13A680019BCC7 /* HHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNavigationController.h; sourceTree = "<group>"; };
+		A13719561CC13A680019BCC7 /* HHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNavigationController.m; sourceTree = "<group>"; };
+		A13719581CC13A930019BCC7 /* HHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTabBar.h; sourceTree = "<group>"; };
+		A13719591CC13A930019BCC7 /* HHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTabBar.m; sourceTree = "<group>"; };
+		A137195B1CC13BA90019BCC7 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		A137195D1CC13C340019BCC7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A137195E1CC13D960019BCC7 /* HHCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCategoryViewController.h; sourceTree = "<group>"; };
+		A137195F1CC13D960019BCC7 /* HHCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCategoryViewController.m; sourceTree = "<group>"; };
+		A13719611CC13DAB0019BCC7 /* HHDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDiscoverViewController.h; sourceTree = "<group>"; };
+		A13719621CC13DAB0019BCC7 /* HHDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDiscoverViewController.m; sourceTree = "<group>"; };
+		A13719641CC13DB90019BCC7 /* HHIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHIndexViewController.h; sourceTree = "<group>"; };
+		A13719651CC13DB90019BCC7 /* HHIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHIndexViewController.m; sourceTree = "<group>"; };
+		A13719671CC13DC50019BCC7 /* HHMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMeViewController.h; sourceTree = "<group>"; };
+		A13719681CC13DC50019BCC7 /* HHMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMeViewController.m; sourceTree = "<group>"; };
+		A137196A1CC13DDC0019BCC7 /* HHShopcarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHShopcarViewController.h; sourceTree = "<group>"; };
+		A137196B1CC13DDC0019BCC7 /* HHShopcarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHShopcarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +120,8 @@
 		A11AF2E11CBD2F3D002EED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A137195E1CC13D960019BCC7 /* HHCategoryViewController.h */,
+				A137195F1CC13D960019BCC7 /* HHCategoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +153,8 @@
 		A11AF2E51CBD2F3D002EED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A13719611CC13DAB0019BCC7 /* HHDiscoverViewController.h */,
+				A13719621CC13DAB0019BCC7 /* HHDiscoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +186,8 @@
 		A11AF2E91CBD2F3D002EED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A13719641CC13DB90019BCC7 /* HHIndexViewController.h */,
+				A13719651CC13DB90019BCC7 /* HHIndexViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +219,8 @@
 		A11AF2ED1CBD2F3D002EED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A13719671CC13DC50019BCC7 /* HHMeViewController.h */,
+				A13719681CC13DC50019BCC7 /* HHMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,11 +246,15 @@
 				A11AF2F21CBD2F3D002EED3E /* AppDelegate.m */,
 				A11AF2F31CBD2F3D002EED3E /* haho.xcdatamodeld */,
 				A11AF2F51CBD2F3D002EED3E /* Info.plist */,
+				A137195B1CC13BA90019BCC7 /* Foundation+Log.m */,
 				A11AF2F61CBD2F3D002EED3E /* main.m */,
-				A11AF3021CBD2F9D002EED3E /* HHNavigationBar.h */,
-				A11AF3031CBD2F9D002EED3E /* HHNavigationBar.m */,
 				A11AF3051CBD3500002EED3E /* HHTabBarViewController.h */,
 				A11AF3061CBD3500002EED3E /* HHTabBarViewController.m */,
+				A13719551CC13A680019BCC7 /* HHNavigationController.h */,
+				A13719561CC13A680019BCC7 /* HHNavigationController.m */,
+				A13719581CC13A930019BCC7 /* HHTabBar.h */,
+				A13719591CC13A930019BCC7 /* HHTabBar.m */,
+				A137195D1CC13C340019BCC7 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -239,6 +272,8 @@
 		A11AF2F81CBD2F3D002EED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A137196A1CC13DDC0019BCC7 /* HHShopcarViewController.h */,
+				A137196B1CC13DDC0019BCC7 /* HHShopcarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,10 +362,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13719571CC13A680019BCC7 /* HHNavigationController.m in Sources */,
+				A137195C1CC13BA90019BCC7 /* Foundation+Log.m in Sources */,
+				A13719601CC13D960019BCC7 /* HHCategoryViewController.m in Sources */,
+				A137196C1CC13DDC0019BCC7 /* HHShopcarViewController.m in Sources */,
+				A13719661CC13DB90019BCC7 /* HHIndexViewController.m in Sources */,
+				A137195A1CC13A930019BCC7 /* HHTabBar.m in Sources */,
+				A13719631CC13DAB0019BCC7 /* HHDiscoverViewController.m in Sources */,
 				A11AF3071CBD3500002EED3E /* HHTabBarViewController.m in Sources */,
+				A13719691CC13DC50019BCC7 /* HHMeViewController.m in Sources */,
 				A11AF2FB1CBD2F3D002EED3E /* AppDelegate.m in Sources */,
 				A11AF2FE1CBD2F3D002EED3E /* main.m in Sources */,
-				A11AF3041CBD2F9D002EED3E /* HHNavigationBar.m in Sources */,
 				A11AF2FC1CBD2F3D002EED3E /* haho.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +407,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = haho/class/Other/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -407,6 +450,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = haho/class/Other/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
