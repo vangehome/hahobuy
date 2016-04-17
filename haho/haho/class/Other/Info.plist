@@ -26,6 +26,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>bundle display name</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string>好货</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

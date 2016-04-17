@@ -1,30 +1,22 @@
 //
-//  HHMeViewController.m
+//  HHLoginViewController.m
 //  haho
 //
-//  Created by ANDY on 16/4/15.
+//  Created by ANDY on 16/4/17.
 //  Copyright © 2016年 vangehome. All rights reserved.
 //
 
-#import "HHMeViewController.h"
 #import "HHLoginViewController.h"
-@interface HHMeViewController ()
+
+@interface HHLoginViewController ()
 
 @end
 
-@implementation HHMeViewController
+@implementation HHLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     XMGBG;
-    HHLoginViewController* viewLogin=[[HHLoginViewController alloc] init];
-    [self presentViewController:viewLogin animated:YES completion:^{
-        //
-        XMGLogFun;
-        
-    }];
-    
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,5 +33,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)close:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

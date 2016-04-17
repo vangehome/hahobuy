@@ -1,30 +1,22 @@
 //
-//  HHMeViewController.m
+//  HHFindPasswordViewController.m
 //  haho
 //
-//  Created by ANDY on 16/4/15.
+//  Created by ANDY on 16/4/17.
 //  Copyright © 2016年 vangehome. All rights reserved.
 //
 
-#import "HHMeViewController.h"
-#import "HHLoginViewController.h"
-@interface HHMeViewController ()
+#import "HHFindPasswordViewController.h"
+
+@interface HHFindPasswordViewController ()
 
 @end
 
-@implementation HHMeViewController
+@implementation HHFindPasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     XMGBG;
-    HHLoginViewController* viewLogin=[[HHLoginViewController alloc] init];
-    [self presentViewController:viewLogin animated:YES completion:^{
-        //
-        XMGLogFun;
-        
-    }];
-    
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
