@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HHLoginViewController : UIViewController
-
+@interface HHLoginViewController :UIViewController
 @end

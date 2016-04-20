@@ -8,6 +8,9 @@
 
 #import "HHMeViewController.h"
 #import "HHLoginViewController.h"
+#import "HHNavigationController.h"
+#import "AppDelegate.h"
+
 @interface HHMeViewController ()
 
 @end
@@ -16,20 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     XMGBG;
-    HHLoginViewController* viewLogin=[[HHLoginViewController alloc] init];
-    [self presentViewController:viewLogin animated:YES completion:^{
-        //
-        XMGLogFun;
-        
-    }];
     
     // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)show:(id)sender {
+    HHLoginViewController* viewLogin=[[HHLoginViewController alloc] init];
+    HHNavigationController* nav=[[HHNavigationController alloc] initWithRootViewController:viewLogin];
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate.window.rootViewController presentViewController:nav animated:YES completion:nil];
+
 }
 
 /*

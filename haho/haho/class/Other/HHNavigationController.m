@@ -7,7 +7,8 @@
 //
 
 #import "HHNavigationController.h"
-
+#import "HHRegViewController.h"
+#import "HHFindPasswordViewController.h"
 @interface HHNavigationController ()
 
 @end
@@ -16,11 +17,13 @@
 
 +(void)initialize{
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil]  setBackgroundColor:XMGRGBCOLOR(238, 238, 238)];
+    XMGLogFun;
     
     
 }
 -(void)viewDidLoad{
     [super viewDidLoad];
+  
     
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
@@ -48,7 +51,11 @@
     
 }
 -(void)popme{
-    [self popToRootViewControllerAnimated:YES];
+    //如果当前视图是登录窗口
+    if([self.topViewController isKindOfClass:[HHRegViewController class]]||[self.topViewController isKindOfClass:[HHFindPasswordViewController class]]){
+        self.navigationBarHidden=YES;
+    };
+    [self popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

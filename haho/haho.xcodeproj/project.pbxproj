@@ -30,6 +30,7 @@
 		A13719661CC13DB90019BCC7 /* HHIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719651CC13DB90019BCC7 /* HHIndexViewController.m */; };
 		A13719691CC13DC50019BCC7 /* HHMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13719681CC13DC50019BCC7 /* HHMeViewController.m */; };
 		A137196C1CC13DDC0019BCC7 /* HHShopcarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A137196B1CC13DDC0019BCC7 /* HHShopcarViewController.m */; };
+		A152B7951CC689F3007C5642 /* HHMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A152B7941CC689F3007C5642 /* HHMeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,7 @@
 		A11AF3061CBD3500002EED3E /* HHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTabBarViewController.m; sourceTree = "<group>"; };
 		A131C6731CC3D73C00E0F10A /* HHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLoginViewController.h; sourceTree = "<group>"; };
 		A131C6741CC3D73C00E0F10A /* HHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLoginViewController.m; sourceTree = "<group>"; };
-		A131C6751CC3D73C00E0F10A /* HHLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HHLoginViewController.xib; path = ../Controller/HHLoginViewController.xib; sourceTree = "<group>"; };
+		A131C6751CC3D73C00E0F10A /* HHLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHLoginViewController.xib; sourceTree = "<group>"; };
 		A131C6791CC3DDE000E0F10A /* MLBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBaseView.h; sourceTree = "<group>"; };
 		A131C67A1CC3DDE000E0F10A /* MLBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBaseView.m; sourceTree = "<group>"; };
 		A131C67C1CC3DDE000E0F10A /* UIButton+MBIBnspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MBIBnspectable.h"; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		A13719681CC13DC50019BCC7 /* HHMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMeViewController.m; sourceTree = "<group>"; };
 		A137196A1CC13DDC0019BCC7 /* HHShopcarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHShopcarViewController.h; sourceTree = "<group>"; };
 		A137196B1CC13DDC0019BCC7 /* HHShopcarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHShopcarViewController.m; sourceTree = "<group>"; };
+		A152B7941CC689F3007C5642 /* HHMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHMeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,8 +250,10 @@
 			children = (
 				A13719671CC13DC50019BCC7 /* HHMeViewController.h */,
 				A13719681CC13DC50019BCC7 /* HHMeViewController.m */,
+				A152B7941CC689F3007C5642 /* HHMeViewController.xib */,
 				A131C6731CC3D73C00E0F10A /* HHLoginViewController.h */,
 				A131C6741CC3D73C00E0F10A /* HHLoginViewController.m */,
+				A131C6751CC3D73C00E0F10A /* HHLoginViewController.xib */,
 				A131C6861CC3E86600E0F10A /* HHRegViewController.h */,
 				A131C6871CC3E86600E0F10A /* HHRegViewController.m */,
 				A131C6881CC3E86600E0F10A /* HHRegViewController.xib */,
@@ -270,7 +274,6 @@
 		A11AF2EF1CBD2F3D002EED3E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A131C6751CC3D73C00E0F10A /* HHLoginViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			files = (
 				A131C68F1CC3E87B00E0F10A /* HHFindPasswordViewController.xib in Resources */,
 				A131C68A1CC3E86600E0F10A /* HHRegViewController.xib in Resources */,
+				A152B7951CC689F3007C5642 /* HHMeViewController.xib in Resources */,
 				A131C6771CC3D73C00E0F10A /* HHLoginViewController.xib in Resources */,
 				A11DFC361CBFF92700802FF3 /* Assets.xcassets in Resources */,
 			);

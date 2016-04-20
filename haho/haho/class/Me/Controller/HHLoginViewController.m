@@ -7,7 +7,8 @@
 //
 
 #import "HHLoginViewController.h"
-
+#import "HHRegViewController.h"
+#import "HHFindPasswordViewController.h"
 @interface HHLoginViewController ()
 
 @end
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -23,6 +25,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)regClick:(id)sender {
+    HHRegViewController* v=[[HHRegViewController alloc]init];
+    XMGLogFun;
+    [self.navigationController pushViewController:v animated:YES];
+}
+- (IBAction)reSetPsswordClick:(id)sender {
+    HHFindPasswordViewController* v=[[HHFindPasswordViewController alloc]init];
+    [self.navigationController pushViewController:v animated:YES];
+   }
 
 /*
 #pragma mark - Navigation
