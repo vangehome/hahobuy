@@ -14,11 +14,22 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-    self.backgroundColor=[UIColor blackColor];
+   
+   
+    
    // self.tintColor=[UIColor ];
 }
 
-
-
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self=[super initWithFrame:frame]) {
+        
+        
+        [self setBackgroundColor:XMGRGBCOLOR(249, 249, 249)];
+        //[self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+        
+        
+    }
+    return self;
+}
 
 @end

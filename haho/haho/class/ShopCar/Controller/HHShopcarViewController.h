@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HHShopcarViewController : UIViewController
+@interface HHShopcarViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

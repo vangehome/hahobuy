@@ -25,13 +25,13 @@
     //============================设置tab属性=================================
     
     NSMutableDictionary* dic=[NSMutableDictionary dictionary];
-    dic[NSFontAttributeName]=[UIFont systemFontOfSize:12];
-    dic[NSForegroundColorAttributeName]=[UIColor whiteColor];
+    dic[NSFontAttributeName]=[UIFont systemFontOfSize:10];
+    dic[NSForegroundColorAttributeName]=XMGRGBCOLOR(39, 38, 55);
     
     
     NSMutableDictionary* selectdic=[NSMutableDictionary dictionary];
-    selectdic[NSFontAttributeName]=[UIFont systemFontOfSize:12];
-    selectdic[NSForegroundColorAttributeName]=XMGRGBCOLOR(146, 146, 146);
+    selectdic[NSFontAttributeName]=[UIFont systemFontOfSize:10];
+    selectdic[NSForegroundColorAttributeName]=XMGRGBCOLOR(205, 41, 3);
     
     UITabBarItem* item=[UITabBarItem appearance];//appearance 全局从设置tabbar属性,不需要再一个个更改
     
@@ -42,11 +42,11 @@
     //属性设置结束
 
     //添加tabitem
-    [self addtab:[[HHIndexViewController alloc] init] title:@"" image:@"" selectImg:@""];
-    [self addtab:[[HHCategoryViewController alloc] init] title:@"分类" image:@"" selectImg:@""];
-    [self addtab:[[HHShopcarViewController alloc] init] title:@"发现" image:@"" selectImg:@""];
-    [self addtab:[[HHDiscoverViewController alloc] init] title:@"购物车" image:@"" selectImg:@""];
-    [self addtab:[[HHMeViewController alloc] init] title:@"我" image:@"" selectImg:@""];
+    [self addtab:[[HHIndexViewController alloc] init] title:@"首页" image:@"Index" selectImg:@"IndexClick"];
+    [self addtab:[[HHCategoryViewController alloc] init] title:@"分类" image:@"Category" selectImg:@"CategoryClick"];
+    [self addtab:[[HHDiscoverViewController  alloc] init] title:@"发现" image:@"Discover" selectImg:@"DiscoverClick"];
+    [self addtab:[[HHShopcarViewController alloc] init] title:@"购物车" image:@"Shopcar" selectImg:@"ShopcarClick"];
+    [self addtab:[[HHMeViewController alloc] init] title:@"我的好货" image:@"Me" selectImg:@"MeClick"];
     //tabitem end
     
      

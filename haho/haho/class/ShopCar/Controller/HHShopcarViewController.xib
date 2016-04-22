@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HHShopcarViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="IMw-Hb-YQ4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" sectionIndexMinimumDisplayRowCount="1" rowHeight="97" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="PaV-mZ-X5T">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3Nt-yg-Lmq"/>
+                        <outlet property="delegate" destination="-1" id="pnm-7A-h7A"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-RD-M9w">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S41-td-cyC">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="146" id="p4J-OW-nuQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="去结算">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="p4J-OW-nuQ"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="p4J-OW-nuQ"/>
+                                </mask>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="S41-td-cyC" secondAttribute="trailing" id="7Dr-0b-oRW"/>
+                        <constraint firstAttribute="bottom" secondItem="S41-td-cyC" secondAttribute="bottom" id="7IC-ID-vH2"/>
+                        <constraint firstItem="S41-td-cyC" firstAttribute="height" secondItem="MEj-RD-M9w" secondAttribute="height" id="q53-tX-X9m"/>
+                        <constraint firstAttribute="height" constant="51" id="xPQ-k9-nDJ">
+                            <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.61842105260000002" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="S41-td-cyC"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="xPQ-k9-nDJ"/>
+                            <exclude reference="7Dr-0b-oRW"/>
+                            <exclude reference="7IC-ID-vH2"/>
+                            <exclude reference="q53-tX-X9m"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="S41-td-cyC"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="xPQ-k9-nDJ"/>
+                            <include reference="7Dr-0b-oRW"/>
+                            <include reference="7IC-ID-vH2"/>
+                            <include reference="q53-tX-X9m"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MEj-RD-M9w" secondAttribute="trailing" id="2y2-EC-kt0"/>
+                <constraint firstAttribute="trailing" secondItem="PaV-mZ-X5T" secondAttribute="trailing" id="8b7-dv-1Wz"/>
+                <constraint firstItem="PaV-mZ-X5T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M1X-qT-udO"/>
+                <constraint firstItem="MEj-RD-M9w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PGY-LA-Stx"/>
+                <constraint firstAttribute="bottom" secondItem="PaV-mZ-X5T" secondAttribute="bottom" id="ZAr-Oa-rN5"/>
+                <constraint firstItem="PaV-mZ-X5T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bZu-k4-5Kq"/>
+                <constraint firstAttribute="bottom" secondItem="MEj-RD-M9w" secondAttribute="bottom" id="lEa-bi-bUq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                </constraint>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="PaV-mZ-X5T"/>
+                    <exclude reference="MEj-RD-M9w"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2y2-EC-kt0"/>
+                    <exclude reference="PGY-LA-Stx"/>
+                    <exclude reference="lEa-bi-bUq"/>
+                    <exclude reference="8b7-dv-1Wz"/>
+                    <exclude reference="M1X-qT-udO"/>
+                    <exclude reference="ZAr-Oa-rN5"/>
+                    <exclude reference="bZu-k4-5Kq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="PaV-mZ-X5T"/>
+                    <include reference="MEj-RD-M9w"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2y2-EC-kt0"/>
+                    <include reference="PGY-LA-Stx"/>
+                    <include reference="lEa-bi-bUq"/>
+                    <include reference="8b7-dv-1Wz"/>
+                    <include reference="M1X-qT-udO"/>
+                    <include reference="ZAr-Oa-rN5"/>
+                    <include reference="bZu-k4-5Kq"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

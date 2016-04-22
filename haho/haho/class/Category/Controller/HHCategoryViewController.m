@@ -18,6 +18,7 @@
     [super viewDidLoad];
     XMGBG;
     // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {

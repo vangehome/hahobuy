@@ -17,12 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      XMGBG;
-    UIButton* sms=[UIButton buttonWithType:UIButtonTypeCustom];
-    [sms setTitle:@"消息" forState:UIControlStateNormal];
-    [sms setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [sms sizeToFit];
-    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:sms];
+//    UIButton* sms=[UIButton buttonWithType:UIButtonTypeCustom];
+//    [sms setTitle:@"消息" forState:UIControlStateNormal];
+//    [sms setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [sms sizeToFit];
+//    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:sms];
     // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
